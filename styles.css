@@ -90,6 +90,10 @@ a {
     align-content: center;
 }
 
+h2 {
+    text-align: center;
+    width: 80%;
+}
 
 .articlesContainer {
     display: grid;

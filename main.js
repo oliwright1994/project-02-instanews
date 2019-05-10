@@ -6,7 +6,23 @@ $('#newsSection').change(function(){
     $(".loading-indicator").show();
     $(".loadingcontainer").show();
     $(".articlesContainer").empty()
-    $.getJSON("https://api.nytimes.com/svc/topstories/v2/" +section+".json?api-key=JZGkmnwVvjwt6MH5Fh2i4dL1nQTF2AD9").done(function(topStories) {
+
+
+    $.ajax({
+      url: "https://api.nytimes.com/svc/topstories/v2/" +section+".json?api-key=JZGkmnwVvjwt6MH5Fh2i4dL1nQTF2AD9",
+      type: 'GET',
+      datatype: 'json'
+    })
+      .fail(function () {
+        $(".loading-indicator").hide()
+        $(".header").css("flex-direction", "row")
+        $(".header").css("justify-content", "flex-start")
+        $(".header").css("height", "150px")
+        $(".header").css("margin", "30px")
+        $(".loadingcontainer").append("<h2>We're sorry but the New York Times API could not be reached at this time</h2>")
+        })
+
+      .done(function(topStories) {
         $(".header").css("flex-direction", "row")
         $(".header").css("justify-content", "flex-start")
         $(".header").css("height", "150px")
@@ -33,9 +49,7 @@ $('#newsSection').change(function(){
       // Hide loading icon
       $(".loading-indicator").hide()
       $(".loadingcontainer").hide()
-
       });
-
     });
 })
 
