@@ -70,6 +70,13 @@ a {
     margin-top: 30vh;
 }
 
+@media screen and (min-width: 1200px) {
+    .header{
+    flex-direction: row;
+    justify-content: flex-start;
+    }
+}
+
 .header img {
     object-fit: contain;
     height: 100%
@@ -130,9 +137,6 @@ a {
 
 }
 
-a:hover > div {
-max-height: 50%;
-}
 
 .articleBox div p {
     background-color: rgba(50, 50, 50, 0.7);
@@ -142,9 +146,16 @@ max-height: 50%;
     display: block;
 }
 
-.articleBox div {
-    max-height: 0px;
-    transition:  all 0.5s ;
+
+@media screen and (min-width: 1200px) {
+    .articleBox div {
+        max-height: 0px;
+        transition:  all 0.5s ;
+    }
+
+    a:hover > div {
+        max-height: 70%;
+        }
 }
 
 footer p {
@@ -152,5 +163,11 @@ footer p {
     margin: 5px auto;
     text-align: center;
 
+}
+@media screen and (min-width: 1200px) {
+    footer p{
+        margin-left: 50px;
+    text-align: left;
+    }
 }
 
