@@ -25,11 +25,9 @@ $(document).ready(function() {
 
     .done(function(topStories) {
       $(".articlesContainer").hide()
-      if (window.screen.width >= 1200){
-      $(".header").animate({'height':'150px','margin':'30px'}, 500 )
-      }
-      $(".header").css("flex-direction", "row")
-      $(".header").css("justify-content", "flex-start")
+      $(".header").animate({'height':'200px','margin':'30px'}, 500 )
+      $(".header img").animate({'height':'150px'}, 500 )
+      $(".header").addClass("header-flex-change")
 
 
         $.each(topStories.results, function () {
@@ -57,5 +55,6 @@ $(document).ready(function() {
       });
     });
 })
+
 
 

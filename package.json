@@ -11,10 +11,12 @@
   "dependencies": {
     "gulp-cli": "^2.2.0",
     "gulp-css-scss": "^0.1.0",
+    "gulp-refresh": "^1.1.0",
     "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
     "gulp-terser": "^1.1.7",
     "node-sass": "^4.12.0",
-    "gulp-refresh": "^1.1.0"
+    "terser": "^3.17.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
