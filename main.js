@@ -14,44 +14,38 @@ $(document).ready(function() {
       type: 'GET',
       datatype: 'json'
     })
-    .fail(function () {
-      $(".loading-indicator").hide()
-      // $(".header").css("flex-direction", "row")
-      // $(".header").css("justify-content", "flex-start")
-      // $(".header").css("height", "150px")
-      // $(".header").css("margin", "30px")
-      $(".loadingcontainer").append("<h2 class='error'>We're sorry but the New York Times API could not be reached at this time</h2>")
-    })
+      .fail(function () {
+        $(".loading-indicator").hide()
+        $(".loadingcontainer").append("<h2 class='error'>We're sorry but the New York Times API could not be reached at this time</h2>")
+      })
 
-    .done(function(topStories) {
-      $(".articlesContainer").hide()
-      $(".header").animate({'height':'200px','margin':'30px'}, 500 )
-      $(".header img").animate({'height':'150px'}, 500 )
-      $(".header").addClass("header-flex-change")
-
-
-        $.each(topStories.results, function () {
-          //End at this point
-          if (document.querySelector(".articlesContainer").childElementCount === 12) {
-            return false;
-          }
-          else {
-              //Renders the article if all of the 4 values used are defined
-            if (this.multimedia[4] !== undefined && this.title !== undefined && this.abstract !== undefined && this.url !== undefined){
-
-              $( "<a class='newArticle'></a>" ).appendTo( ".articlesContainer" )
-              $('.newArticle').append("<h1>"+this.title+"</h1>")
-              $('.newArticle').append("<div><p>"+this.abstract+"</p></div>")
-              $('.newArticle').css("background-image", "url(" + this.multimedia[4].url + ")")
-              $('.newArticle').attr("href", this.url)
-              $('.newArticle').attr("class", "articleBox")
+      .done(function(topStories) {
+        $(".articlesContainer").hide()
+        $(".header").animate({'height':'200px','margin':'30px'}, 500 )
+        $(".header img").animate({'height':'150px'}, 500 )
+        $(".header").addClass("header-flex-change")
+          $.each(topStories.results, function () {
+            //End at this point
+            if (document.querySelector(".articlesContainer").childElementCount === 12) {
+              return false;
             }
-          }
-        })
-      // Hide loading icon
-      $(".loading-indicator").hide()
-      $(".loadingcontainer").hide()
-      $(".articlesContainer").fadeIn(1000)
+            else {
+                //Renders the article if all of the 4 values used are defined
+              if (this.multimedia[4] !== undefined && this.title !== undefined && this.abstract !== undefined && this.url !== undefined){
+
+                $( "<a class='newArticle'></a>" ).appendTo( ".articlesContainer" )
+                $('.newArticle').append("<h1>"+this.title+"</h1>")
+                $('.newArticle').append("<div><p>"+this.abstract+"</p></div>")
+                $('.newArticle').css("background-image", "url(" + this.multimedia[4].url + ")")
+                $('.newArticle').attr("href", this.url)
+                $('.newArticle').attr("class", "articleBox")
+              }
+            }
+          })
+        // Hide loading icon
+        $(".loading-indicator").hide()
+        $(".loadingcontainer").hide()
+        $(".articlesContainer").fadeIn(1000)
       });
     });
 })
