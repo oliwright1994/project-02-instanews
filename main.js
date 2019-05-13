@@ -38,6 +38,7 @@ $(document).ready(function() {
                 $('.newArticle').append("<div><p>"+this.abstract+"</p></div>")
                 $('.newArticle').css("background-image", "url(" + this.multimedia[4].url + ")")
                 $('.newArticle').attr("href", this.url)
+                $('.newArticle').attr("target", "_blank")
                 $('.newArticle').attr("class", "articleBox")
               }
             }
@@ -49,6 +50,7 @@ $(document).ready(function() {
       });
     });
 })
+
 
 
 
