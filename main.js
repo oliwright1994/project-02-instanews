@@ -25,7 +25,7 @@ $(document).ready(function() {
         $(".header img").animate({'height':'150px'}, 500 )
         $(".header").addClass("header-flex-change")
           $.each(topStories.results, function () {
-            //End at this point
+            //Ends when 12 articles have been
             if (document.querySelector(".articlesContainer").childElementCount === 12) {
               return false;
             }
