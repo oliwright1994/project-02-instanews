@@ -1,26 +1,26 @@
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../assets/fonts/OpenSans-Light.eot");
   src: url("../assets/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"), url("../assets/fonts/OpenSans-Bold.woff") format("woff"), url("../assets/fonts/OpenSans-Bold.ttf") format("truetype"), url("../assets/fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../assets/fonts/OpenSans-Light.eot");
   src: url("../assets/fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/OpenSans-Light.woff2") format("woff2"), url("../assets/fonts/OpenSans-Light.woff") format("woff"), url("../assets/fonts/OpenSans-Light.ttf") format("truetype"), url("../assets/fonts/OpenSans-Light.svg#../assets/fonts/OpenSans-Light") format("svg");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../assets/fonts/OpenSans-BoldItalic.eot");
   src: url("../assets/fonts/OpenSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/OpenSans-BoldItalic.woff2") format("woff2"), url("../assets/fonts/OpenSans-BoldItalic.woff") format("woff"), url("../assets/fonts/OpenSans-BoldItalic.ttf") format("truetype"), url("../assets/fonts/OpenSans-BoldItalic.svg#../assets/fonts/OpenSans-BoldItalic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   src: url("../assets/fonts/OpenSansLight-Italic.eot");
   src: url("../assets/fonts/OpenSansLight-Italic.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/OpenSansLight-Italic.woff2") format("woff2"), url("../assets/fonts/OpenSansLight-Italic.woff") format("woff"), url("../assets/fonts/OpenSansLight-Italic.ttf") format("truetype"), url("../assets/fonts/OpenSansLight-Italic.svg#../assets/fonts/OpenSansLight-Italic") format("svg");
   font-weight: 300;
@@ -30,7 +30,7 @@ body {
   background: black;
   color: #ffffff;
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 300;
   margin: 5vh auto;
   width: 100%; }
@@ -47,7 +47,7 @@ a {
   align-items: center;
   justify-self: center;
   height: auto;
-  margin-top: 30vh;
+  margin-top: 25vh;
   object-fit: contain; }
 
 @media screen and (min-width: 1200px) {
@@ -101,17 +101,16 @@ h2 {
   background-size: cover;
   background-position: center;
   overflow: hidden; }
-
-.articleBox h1 {
-  background-color: rgba(50, 50, 50, 0.7);
-  text-align: left;
-  margin: 0;
-  border-bottom: solid 1px grey;
-  padding: 0.5em;
-  display: block;
-  font-size: 16px;
-  letter-spacing: 1px;
-  text-decoration: none; }
+  .articleBox h1 {
+    background-color: rgba(50, 50, 50, 0.7);
+    text-align: left;
+    margin: 0;
+    border-bottom: solid 1px grey;
+    padding: 0.5em;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none; }
 
 .articleBox div p {
   background-color: rgba(50, 50, 50, 0.7);

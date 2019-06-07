@@ -1,144 +1,147 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../assets/fonts/OpenSans-Light.eot');
-    src: url('../assets/fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/OpenSans-Bold.woff2') format('woff2'),
-        url('../assets/fonts/OpenSans-Bold.woff') format('woff'),
-        url('../assets/fonts/OpenSans-Bold.ttf') format('truetype'),
-        url('../assets/fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../assets/fonts/OpenSans-Light.eot');
-    src: url('../assets/fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/OpenSans-Light.woff2') format('woff2'),
-        url('../assets/fonts/OpenSans-Light.woff') format('woff'),
-        url('../assets/fonts/OpenSans-Light.ttf') format('truetype'),
-        url('../assets/fonts/OpenSans-Light.svg#../assets/fonts/OpenSans-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.eot");
+  src: url("../assets/fonts/OpenSans-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("../assets/fonts/OpenSans-Bold.woff") format("woff"),
+    url("../assets/fonts/OpenSans-Bold.ttf") format("truetype"),
+    url("../assets/fonts/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../assets/fonts/OpenSans-BoldItalic.eot');
-    src: url('../assets/fonts/OpenSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/OpenSans-BoldItalic.woff2') format('woff2'),
-        url('../assets/fonts/OpenSans-BoldItalic.woff') format('woff'),
-        url('../assets/fonts/OpenSans-BoldItalic.ttf') format('truetype'),
-        url('../assets/fonts/OpenSans-BoldItalic.svg#../assets/fonts/OpenSans-BoldItalic') format('svg');
-    font-weight: bold;
-    font-style: italic;
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Light.eot");
+  src: url("../assets/fonts/OpenSans-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/OpenSans-Light.woff2") format("woff2"),
+    url("../assets/fonts/OpenSans-Light.woff") format("woff"),
+    url("../assets/fonts/OpenSans-Light.ttf") format("truetype"),
+    url("../assets/fonts/OpenSans-Light.svg#../assets/fonts/OpenSans-Light")
+      format("svg");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../assets/fonts/OpenSansLight-Italic.eot');
-    src: url('../assets/fonts/OpenSansLight-Italic.eot?#iefix') format('embedded-opentype'),
-        url('../assets/fonts/OpenSansLight-Italic.woff2') format('woff2'),
-        url('../assets/fonts/OpenSansLight-Italic.woff') format('woff'),
-        url('../assets/fonts/OpenSansLight-Italic.ttf') format('truetype'),
-        url('../assets/fonts/OpenSansLight-Italic.svg#../assets/fonts/OpenSansLight-Italic') format('svg');
-    font-weight: 300;
-    font-style: italic;
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-BoldItalic.eot");
+  src: url("../assets/fonts/OpenSans-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("../assets/fonts/OpenSans-BoldItalic.woff") format("woff"),
+    url("../assets/fonts/OpenSans-BoldItalic.ttf") format("truetype"),
+    url("../assets/fonts/OpenSans-BoldItalic.svg#../assets/fonts/OpenSans-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSansLight-Italic.eot");
+  src: url("../assets/fonts/OpenSansLight-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/OpenSansLight-Italic.woff2") format("woff2"),
+    url("../assets/fonts/OpenSansLight-Italic.woff") format("woff"),
+    url("../assets/fonts/OpenSansLight-Italic.ttf") format("truetype"),
+    url("../assets/fonts/OpenSansLight-Italic.svg#../assets/fonts/OpenSansLight-Italic")
+      format("svg");
+  font-weight: 300;
+  font-style: italic;
 }
 $text-box-background: rgba(50, 50, 50, 0.7);
 
 body {
-    background: black;
-    color: #ffffff;
-    font-size: 16px;
-    font-family: 'Open Sans';
-    font-weight: 300;
-    margin: 5vh auto;
-    width: 100%;
+  background: black;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Open Sans";
+  font-weight: 300;
+  margin: 5vh auto;
+  width: 100%;
 }
 
 a {
-    text-decoration-line: none;
-    color: white;
+  text-decoration-line: none;
+  color: white;
 }
 
 .header {
-    display: flex;
-    flex-direction: column;
-    margin: 5px auto;
-    justify-content: flex-end;
-    align-items: center;
-    justify-self: center;
-    height: auto;
-    margin-top: 30vh;
-    object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  margin: 5px auto;
+  justify-content: flex-end;
+  align-items: center;
+  justify-self: center;
+  height: auto;
+  margin-top: 25vh;
+  object-fit: contain;
 }
 
 @media screen and (min-width: 1200px) {
-    .header{
+  .header {
     flex-direction: row;
     justify-content: flex-start;
-    }
+  }
 }
 
 .header img {
-    object-fit: scale-down;
+  object-fit: scale-down;
 }
 
 .page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 90vh;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  align-content: center;
 }
 
 h2 {
-    text-align: center;
-    width: 80%;
+  text-align: center;
+  width: 80%;
 }
 
 .articlesContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 0.3rem;
-    margin: 10px 30px 50px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap: 0.3rem;
+  margin: 10px 30px 50px 30px;
 }
 @media screen and (max-width: 750px) {
-    .articlesContainer {
-        grid-template-columns: minmax(20rem, 1fr);
-        width: 80%;
-        margin: 10px auto;
-    }
+  .articlesContainer {
+    grid-template-columns: minmax(20rem, 1fr);
+    width: 80%;
+    margin: 10px auto;
+  }
 }
 
 .loadingcontainer {
-    display: flex;
-    justify-content: center;
-    height: 20vh;
-    overflow: hidden;
-
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+  overflow: hidden;
 }
 
 .loading-indicator {
-    display: none;
-    height:100px;
-    width: 100px;
-    margin-top: 50px;
+  display: none;
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
 }
 
 .articleBox {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-}
-
-.articleBox h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  h1 {
     background-color: $text-box-background;
     text-align: left;
     margin: 0;
@@ -148,48 +151,44 @@ h2 {
     font-size: 16px;
     letter-spacing: 1px;
     text-decoration: none;
+  }
 }
 
 .articleBox div p {
-    background-color: $text-box-background;
-    text-align: left;
-    margin: 0;
-    padding: 0.5em;
-    display: block;
+  background-color: $text-box-background;
+  text-align: left;
+  margin: 0;
+  padding: 0.5em;
+  display: block;
 }
 
 @media screen and (min-width: 1200px) {
-    .articleBox div {
-        max-height: 0px;
-        transition:  all 0.5s ;
-    }
+  .articleBox div {
+    max-height: 0px;
+    transition: all 0.5s;
+  }
 
-    a:hover > div {
-        max-height: 70%;
-        }
+  a:hover > div {
+    max-height: 70%;
+  }
 }
 
 footer p {
-    color: #c2c2c2;
-    margin: 5px auto;
-    text-align: center;
-
+  color: #c2c2c2;
+  margin: 5px auto;
+  text-align: center;
 }
 
 @media screen and (min-width: 1200px) {
-    footer p{
-        margin-left: 50px;
-        text-align: left;
-    }
+  footer p {
+    margin-left: 50px;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 900px) {
-.header-flex-change {
+  .header-flex-change {
     flex-direction: row;
     justify-content: flex-start;
-    }
+  }
 }
-
-
-
-
